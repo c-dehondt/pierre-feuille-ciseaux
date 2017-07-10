@@ -1,0 +1,44 @@
+body{
+  background-image: url("../img/fond.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 640px;
+}
+
+section{
+  height: 430px;
+}
+
+h1{
+  color:#545454;
+}
+
+.jeu{
+  text-align: center;
+}
+
+.affiche{
+  font-size: 60px;
+}
+
+
+#fin{
+  position: absolute;
+  top:30%;
+  left:0%;
+  z-index:1;
+}
+
+
+h2{
+  text-align: center;
+}
+
+section{
+  margin-top:5%;
+}
+
+#score1, #score2, #affichage, #fin{
+  text-align: center;
+  font-size:100%;
+}
