@@ -25,12 +25,12 @@
 
         <div class="jeu">
           <h1>Pierre, Feuille, Ciseaux!</h1>
-          <button class="btn btn-warning" type="button" name="button" onclick="jouer()">jouer au jeu</button>
+          <button class="btn btn-warning shake-slow shake-constant shake-constant--hover" type="button" name="button" onclick="jouer()">jouer au jeu</button>
           <button class="btn btn-secondary" type="button" name="button" onclick="rejouer()">rejouer</button>
         </div>
 
 
-        <section class="row justify-content-around">
+        <section class="row justify-content-around" id="lancer">
 
           <img class="col-12 " onclick="rejouer()" id="fin" src="" alt="">
           <div class="col-12 row">
@@ -44,9 +44,9 @@
             <div class="col-12 row justify-content-around">
               <div class="row col-12 col-lg-6 justify-content-around"><!-- images choix joueur -->
                 <h2 class="col-12" id="pseudo">joueur</h2>
-                <img class="col-4 shake-little" src="img/pierre.png" alt="image pierre" onclick="resultat('pierre')" id="joueurPierre">
-                <img class="col-4 shake-little" src="img/feuille.png" alt="image feuille" onclick="resultat('feuille')" id="joueurFeuille">
-                <img class="col-4 shake-little" src="img/ciseaux.png" alt="image ciseaux" onclick="resultat('ciseaux')" id="joueurCiseaux">
+                <img class="col-4 shake-slow" src="img/pierre.png" alt="image pierre" onclick="resultat('pierre')" id="joueurPierre">
+                <img class="col-4 shake-slow" src="img/feuille.png" alt="image feuille" onclick="resultat('feuille')" id="joueurFeuille">
+                <img class="col-4 shake-slow" src="img/ciseaux.png" alt="image ciseaux" onclick="resultat('ciseaux')" id="joueurCiseaux">
               </div>
                 <h2>VS</h2>
               <div class="col-12 col-lg-6 justify-content-center row"><!-- images choix ordinateur -->
