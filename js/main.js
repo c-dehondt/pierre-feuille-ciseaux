@@ -7,12 +7,11 @@ function rejouer() {
   window.location.reload();
 }
 
+
 function jouer() {
   var jouer =prompt("ton pseudo??");
   document.getElementById("pseudo").innerHTML = "Bonjour " + jouer;
 }
-
-
 
 
 function reset() {
