@@ -20,11 +20,10 @@ h1{
 
 #fin{
   position: absolute;
-  top:0%;
+  top:32%;
   left:0%;
   z-index:1;
 }
-
 
 h2{
   text-align: center;
@@ -39,16 +38,24 @@ section{
   font-size:25px;
 }
 
+
 /*option tablette*/
 @media screen and (min-width:768px){
   #score1, #score2, #affichage{
     font-size:50px;
   }
-}
 
+  #fin{
+    top:35%;
+  }
+}
 /*option pc*/
 @media screen and (min-width:900px){
   #score1, #score2, #affichage{
     font-size:80px;
+  }
+  #fin{
+    top:0%;
+    width: 100%;
   }
 }
