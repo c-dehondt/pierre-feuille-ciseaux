@@ -36,16 +36,16 @@ function score() {
   }
 }
 
-function choix() {
-  if(joueur == 'pierre'){
+function choix(joueur) {
+  if(joueur == "pierre"){
     document.getElementById("joueurFeuille").style.display="none";
     document.getElementById("joueurCiseaux").style.display="none";
 
-  }else if (joueur == 'feuille') {
+  }else if (joueur == "feuille") {
     document.getElementById("joueurPierre").style.display="none";
     document.getElementById("joueurCiseaux").style.display="none";
 
-  }else {
+  }else{
     document.getElementById("joueurPierre").style.display="none";
     document.getElementById("joueurFeuille").style.display="none";
   }
@@ -54,10 +54,10 @@ function choix() {
 
 
 function resultat(joueur){
-  choix();
+  choix(joueur);
   ordi = fOrdi();
   if( joueur == ordi){
-    document.getElementById("affichage").innerHTML="équalités";
+    document.getElementById("affichage").innerHTML="égalité";
   }
   else if((joueur == "pierre" && ordi == "ciseaux")
            || (joueur == "feuille" && ordi == "pierre")
@@ -94,6 +94,7 @@ function fOrdi(){
     ordi="ciseaux";
     document.getElementById("monImg").src = "img/ciseaux.png";
 
-  }return ordi;
-  setTimeout(document.getElementById("monImg").src = "img/robot.gif", 1000);
+  }setTimeout(function(){
+  document.getElementById("monImg").src = "img/robot.gif"}, 1000);
+  return ordi;
   }

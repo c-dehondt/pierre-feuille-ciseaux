@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="css/mdp.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
 
@@ -24,7 +25,7 @@
 
         <div class="jeu">
           <h1>Pierre, Feuille, Ciseaux!</h1>
-          <button class="btn btn-primary" type="button" name="button" onclick="jouer()">jouer au jeu</button>
+          <button class="btn btn-warning" type="button" name="button" onclick="jouer()">jouer au jeu</button>
           <button class="btn btn-secondary" type="button" name="button" onclick="rejouer()">rejouer</button>
         </div>
 
@@ -43,9 +44,9 @@
             <div class="col-12 row justify-content-around">
               <div class="row col-12 col-lg-6 justify-content-around"><!-- images choix joueur -->
                 <h2 class="col-12" id="pseudo">joueur</h2>
-                <img class="col-4" src="img/pierre.png" alt="image pierre" onclick="resultat('pierre')" id="joueurPierre">
-                <img class="col-4" src="img/feuille.png" alt="image feuille" onclick="resultat('feuille')" id="joueurFeuille">
-                <img class="col-4" src="img/ciseaux.png" alt="image ciseaux" onclick="resultat('ciseaux')" id="joueurCiseaux">
+                <img class="col-4 shake-little" src="img/pierre.png" alt="image pierre" onclick="resultat('pierre')" id="joueurPierre">
+                <img class="col-4 shake-little" src="img/feuille.png" alt="image feuille" onclick="resultat('feuille')" id="joueurFeuille">
+                <img class="col-4 shake-little" src="img/ciseaux.png" alt="image ciseaux" onclick="resultat('ciseaux')" id="joueurCiseaux">
               </div>
                 <h2>VS</h2>
               <div class="col-12 col-lg-6 justify-content-center row"><!-- images choix ordinateur -->
